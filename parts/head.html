@@ -1,76 +1,33 @@
-
-
-
-
 <link type="text/css" rel="StyleSheet" href=css/my.css />
-
 <link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
-
 <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-
 <script type="text/javascript">jQuery(document).ready(function($) {$(".scroll").click(function(event){event.preventDefault();$('html,body').animate({scrollTop:this.hash).offset().top},300);});});</script>
-
-
-
 <link type="text/css" rel="stylesheet" href=css/base.css />
-
 <link type="text/css" rel="stylesheet" href=css/layer7.css />
-
-
-
 <script type="text/javascript" src=css/jquery-1.10.2.js></script>
-
-
-
 <script type="text/javascript" src=css/uwnd.js?2></script>
-
-
 <script type="text/javascript">
-
 window.ulb = {photoPage: "Go to the page with the photo",closeBtn: "Close", error: "The requested content can&#39;t be uploaded&lt;br/&gt;Please try again later.", next: "Next", prev: "Previous", btnPlay: "Start slideshow", btnToggle: "Change size"}
-
 </script>
-
 <link type="text/css" rel="stylesheet" href=css/ulightbox.css />
-
 <script type="text/javascript" src=css/ulightbox.js></script>
-
-
-
 <script type="text/javascript" async defer src="https://www.google.com/recaptcha/api.js?onload=reCallback&render=explicit&hl=en"></script>
-
 <script type="text/javascript">
 function reCallback() {
-
 $('.g-recaptcha').each(function(index, element ) {
-
 element.setAttribute('rcid', index );
-
 if ($(element).is(':empty') ) grecaptcha.render(element, {sitekey:element.getAttribute('data-sitekey'), theme:element.getAttribute('data-theme'), size:element.getAttribute('data-size') });
-
 });
-
 }
-
 function reReset(reset ) {
-
 reset && grecaptcha.reset(reset.previousElementSibling.getAttribute('rcid') );
-
 if (!reset ) for (rel in ___grecaptcha_cfg.clients ) grecaptcha.reset(rel );
-
 }
 </script>
-
-
-
 <style type="text/css">.UhideBlock{display:none; }
 body {
   font-family: Verdana, sans-serif;
@@ -116,7 +73,7 @@ body {
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-  width: 90%;
+  width: 10%;
   max-width: 1200px;
 }
 
@@ -210,6 +167,37 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.column img {
+    margin-top: 12px;
+    width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+   }
 }
 </style>
 
